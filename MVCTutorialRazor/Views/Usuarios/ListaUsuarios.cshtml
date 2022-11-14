@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewData["Title"] = "ListaUsuarios";
+}
+
+<h1>ListaUsuarios</h1>
+
+<ul>
+    @foreach(string user in Model)
+    {
+        <li>@user</li>
+    }
+</ul>
+
+@Html.ActionLink("Regresar","Index")
